@@ -8,7 +8,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form method="get">
+	<form method="post">
 		<!--name-->
 	    <label for="name">Name</label>
 	    <input id="name" type="text" required><br><br>
@@ -21,9 +21,13 @@
 		<input type="radio"name="gender" required>female<br><br>
 		<!--car brands-->
 		<label for="cars">Car Brands</label>
-		<input id="cars" type="checkbox">BMW
-		<input id="cars" type="checkbox">Audi
-		<input id="cars" type="checkbox">Mercedez<br><br>
+		<select name="cars" id="cars">
+  
+  <option value="BMW">BMW</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+
 		<!--carage-->
 		<label for="carage">Car Age</label>
 		<input id="carage"type="number"min="0"max="20"placeholder="years" required>
